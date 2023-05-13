@@ -12,19 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         //
-        Schema::create('clientes', function (Blueprint $table) {
+        Schema::create('transacciones', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Nombre');
-            $table->string('Apellido');
-            $table->string('Dirección');
-            $table->string('Correo');
-
+            $table->string('institución_destino');
+            $table->string('numero_de_cuenta');
+            $table->string('monto');
             $table->timestamps();
         });
-
-       
     }
-    
 
     /**
      * Reverse the migrations.
