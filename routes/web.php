@@ -19,5 +19,6 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::resource('clientes',App\Http\Controllers\ClienteController::class )->middleware('auth');
-Route::resource('transaciones',App\Http\Controllers\TransaccionesController::class )->middleware('auth');
+Route::resource('transacciones',App\Http\Controllers\TransaccioneController::class )->middleware('auth');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

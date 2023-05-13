@@ -31,8 +31,16 @@
                     <!-- Left Side Of Navbar -->
                     @auth
                     <ul class="navbar-nav me-auto">
-                    <a class="nav-link" href="{{ route('clientes.index') }}">{{ __('clientes') }}</a>
-
+                    <a class="nav-link" href="{{ route('clientes.index') }}">{{ __('Clientes') }}</a>
+                    
+                    </ul>
+                       @endauth
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    @auth
+                    <ul class="navbar-nav me-auto">
+                    <a class="nav-link" href="{{ route('transacciones.index') }}">{{ __('Transacciones') }}</a>
+                    
                     </ul>
                        @endauth
                     <!-- Right Side Of Navbar -->

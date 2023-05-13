@@ -14,7 +14,7 @@ return new class extends Migration
         //
         Schema::create('transacciones', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('institución_destino');
+            $table->string('institucion_destino');
             $table->string('numero_de_cuenta');
             $table->string('monto');
             $table->timestamps();
